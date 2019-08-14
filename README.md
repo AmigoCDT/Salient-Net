@@ -7,6 +7,7 @@ I'm playing with [PyTorch](http://pytorch.org/) on the cifar10 or cifar100 datas
 - PyTorch 1.0+
 
 ## Accuracy
+This is not my result, this result is from [pytorch-cifar](https://github.com/kuangliu/pytorch-cifar)
 | Model             | Acc.        |
 | ----------------- | ----------- |
 | [VGG16](https://arxiv.org/abs/1409.1556)              | 92.64%      |
@@ -22,9 +23,11 @@ I'm playing with [PyTorch](http://pytorch.org/) on the cifar10 or cifar100 datas
 
 ## Learning rate adjustment
 I manually change the `lr` during training:
-- `0.1` for epoch `[0,150)`
-- `0.01` for epoch `[150,250)`
-- `0.001` for epoch `[250,350)`
+- `0.1` for epoch `[0,50)`
+- `0.01` for epoch `[50,100)`
+- `0.001` for epoch `[100,150)`
+- `0.0001` for epoch `[150,200)`
+- `0.00001` for epoch `[200,250)`
 
 train from scratch `python main.py --lr 0.1 >./logfile.log`
 Resume the training with `python main.py --resume --lr=0.1 --ckpt-dir ./checkpoint --pretrain-model ./ckpt,133 >./resume_logfile.log`
