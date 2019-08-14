@@ -8,6 +8,7 @@ I'm playing with [PyTorch](http://pytorch.org/) on the cifar10 or cifar100 datas
 
 ## Accuracy
 This is not my result, this result is from [pytorch-cifar](https://github.com/kuangliu/pytorch-cifar)
+
 | Model             | Acc.        |
 | ----------------- | ----------- |
 | [VGG16](https://arxiv.org/abs/1409.1556)              | 92.64%      |
