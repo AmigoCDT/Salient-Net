@@ -31,4 +31,5 @@ I manually change the `lr` during training:
 - `0.00001` for epoch `[200,250)`
 
 train from scratch `python main.py --lr 0.1 >./logfile.log`
+
 Resume the training with `python main.py --resume --lr=0.1 --ckpt-dir ./checkpoint --pretrain-model ./ckpt,133 >./resume_logfile.log`
