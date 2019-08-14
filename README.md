@@ -1,6 +1,6 @@
-# Train CIFAR10 with PyTorch
+# Train CIFAR with PyTorch
 
-I'm playing with [PyTorch](http://pytorch.org/) on the CIFAR10 dataset.
+I'm playing with [PyTorch](http://pytorch.org/) on the cifar10 or cifar100 dataset.
 
 ## Prerequisites
 - Python 3.6+
@@ -26,4 +26,5 @@ I manually change the `lr` during training:
 - `0.01` for epoch `[150,250)`
 - `0.001` for epoch `[250,350)`
 
-Resume the training with `python main.py --resume --lr=0.01`
+train from scratch `python main.py --lr 0.1 >./logfile.log`
+Resume the training with `python main.py --resume --lr=0.1 --ckpt-dir ./checkpoint --pretrain-model ./ckpt,133 >./resume_logfile.log`
