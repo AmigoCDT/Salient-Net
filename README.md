@@ -6,6 +6,10 @@
 | cifar-100(Top-1 ACC) | 77.260%  | 77.130% | 78.350%      |
 | cifar-10(Top-1 ACC)  | 94.380%  | 94.830% | 94.930%      |
 
+# Usage
+train from scratch: `python main.py --lr 0.1 >./log/logfile.log`
+
+train with pretrained-model: `python main.py --resume --lr=0.1 --ckpt-dir ./checkpoint --pretrain-model ./ckpt,133 >./log/resume_logfile.log`
 
 
 # Train CIFAR with PyTorch
@@ -40,6 +44,4 @@ I manually change the `lr` during training:
 - `0.0001` for epoch `[150,200)`
 - `0.00001` for epoch `[200,250)`
 
-train from scratch `python main.py --lr 0.1 >./log/logfile.log`
 
-Resume the training with `python main.py --resume --lr=0.1 --ckpt-dir ./checkpoint --pretrain-model ./ckpt,133 >./log/resume_logfile.log`
