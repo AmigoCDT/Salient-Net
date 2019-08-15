@@ -1,0 +1,1256 @@
+==> Preparing data..
+Files already downloaded and verified
+Files already downloaded and verified
+==> Building model..
+Net building finished
+
+Epoch: 0
+learning rate is 0.1
+Training Loss: 4.196 | Acc: 6.096% (3048/50000)
+Testing Loss: 3.766 | Acc: 11.130% (1113/10000)
+Saving..
+
+Epoch: 1
+learning rate is 0.1
+Training Loss: 3.532 | Acc: 14.816% (7408/50000)
+Testing Loss: 3.492 | Acc: 16.880% (1688/10000)
+Saving..
+
+Epoch: 2
+learning rate is 0.1
+Training Loss: 3.073 | Acc: 22.980% (11490/50000)
+Testing Loss: 2.942 | Acc: 25.640% (2564/10000)
+Saving..
+
+Epoch: 3
+learning rate is 0.1
+Training Loss: 2.713 | Acc: 30.018% (15009/50000)
+Testing Loss: 2.618 | Acc: 31.530% (3153/10000)
+Saving..
+
+Epoch: 4
+learning rate is 0.1
+Training Loss: 2.414 | Acc: 36.148% (18074/50000)
+Testing Loss: 2.637 | Acc: 32.820% (3282/10000)
+Saving..
+
+Epoch: 5
+learning rate is 0.1
+Training Loss: 2.193 | Acc: 40.942% (20471/50000)
+Testing Loss: 2.468 | Acc: 37.180% (3718/10000)
+Saving..
+
+Epoch: 6
+learning rate is 0.1
+Training Loss: 2.049 | Acc: 44.286% (22143/50000)
+Testing Loss: 2.349 | Acc: 38.140% (3814/10000)
+Saving..
+
+Epoch: 7
+learning rate is 0.1
+Training Loss: 1.936 | Acc: 47.004% (23502/50000)
+Testing Loss: 2.300 | Acc: 41.100% (4110/10000)
+Saving..
+
+Epoch: 8
+learning rate is 0.1
+Training Loss: 1.859 | Acc: 48.926% (24463/50000)
+Testing Loss: 2.165 | Acc: 42.690% (4269/10000)
+Saving..
+
+Epoch: 9
+learning rate is 0.1
+Training Loss: 1.798 | Acc: 50.160% (25080/50000)
+Testing Loss: 2.034 | Acc: 45.210% (4521/10000)
+Saving..
+
+Epoch: 10
+learning rate is 0.1
+Training Loss: 1.741 | Acc: 51.616% (25808/50000)
+Testing Loss: 2.220 | Acc: 42.480% (4248/10000)
+Saving..
+
+Epoch: 11
+learning rate is 0.1
+Training Loss: 1.681 | Acc: 53.268% (26634/50000)
+Testing Loss: 2.415 | Acc: 41.770% (4177/10000)
+Saving..
+
+Epoch: 12
+learning rate is 0.1
+Training Loss: 1.637 | Acc: 54.096% (27048/50000)
+Testing Loss: 1.914 | Acc: 49.680% (4968/10000)
+Saving..
+
+Epoch: 13
+learning rate is 0.1
+Training Loss: 1.590 | Acc: 55.096% (27548/50000)
+Testing Loss: 2.035 | Acc: 46.840% (4684/10000)
+Saving..
+
+Epoch: 14
+learning rate is 0.1
+Training Loss: 1.552 | Acc: 56.210% (28105/50000)
+Testing Loss: 1.946 | Acc: 49.680% (4968/10000)
+Saving..
+
+Epoch: 15
+learning rate is 0.1
+Training Loss: 1.519 | Acc: 56.786% (28393/50000)
+Testing Loss: 1.850 | Acc: 50.850% (5085/10000)
+Saving..
+
+Epoch: 16
+learning rate is 0.1
+Training Loss: 1.501 | Acc: 57.290% (28645/50000)
+Testing Loss: 1.822 | Acc: 51.280% (5128/10000)
+Saving..
+
+Epoch: 17
+learning rate is 0.1
+Training Loss: 1.464 | Acc: 58.522% (29261/50000)
+Testing Loss: 1.903 | Acc: 49.150% (4915/10000)
+Saving..
+
+Epoch: 18
+learning rate is 0.1
+Training Loss: 1.456 | Acc: 58.480% (29240/50000)
+Testing Loss: 1.830 | Acc: 50.630% (5063/10000)
+Saving..
+
+Epoch: 19
+learning rate is 0.1
+Training Loss: 1.427 | Acc: 59.148% (29574/50000)
+Testing Loss: 1.861 | Acc: 50.560% (5056/10000)
+Saving..
+
+Epoch: 20
+learning rate is 0.1
+Training Loss: 1.402 | Acc: 60.100% (30050/50000)
+Testing Loss: 1.826 | Acc: 50.870% (5087/10000)
+Saving..
+
+Epoch: 21
+learning rate is 0.1
+Training Loss: 1.390 | Acc: 60.236% (30118/50000)
+Testing Loss: 1.764 | Acc: 52.260% (5226/10000)
+Saving..
+
+Epoch: 22
+learning rate is 0.1
+Training Loss: 1.376 | Acc: 60.556% (30278/50000)
+Testing Loss: 1.940 | Acc: 50.460% (5046/10000)
+Saving..
+
+Epoch: 23
+learning rate is 0.1
+Training Loss: 1.357 | Acc: 61.024% (30512/50000)
+Testing Loss: 2.094 | Acc: 46.750% (4675/10000)
+Saving..
+
+Epoch: 24
+learning rate is 0.1
+Training Loss: 1.336 | Acc: 61.806% (30903/50000)
+Testing Loss: 1.963 | Acc: 49.200% (4920/10000)
+Saving..
+
+Epoch: 25
+learning rate is 0.1
+Training Loss: 1.341 | Acc: 61.432% (30716/50000)
+Testing Loss: 1.883 | Acc: 51.620% (5162/10000)
+Saving..
+
+Epoch: 26
+learning rate is 0.1
+Training Loss: 1.319 | Acc: 62.088% (31044/50000)
+Testing Loss: 1.820 | Acc: 51.310% (5131/10000)
+Saving..
+
+Epoch: 27
+learning rate is 0.1
+Training Loss: 1.311 | Acc: 62.376% (31188/50000)
+Testing Loss: 1.931 | Acc: 49.620% (4962/10000)
+Saving..
+
+Epoch: 28
+learning rate is 0.1
+Training Loss: 1.306 | Acc: 62.406% (31203/50000)
+Testing Loss: 1.746 | Acc: 52.810% (5281/10000)
+Saving..
+
+Epoch: 29
+learning rate is 0.1
+Training Loss: 1.301 | Acc: 62.538% (31269/50000)
+Testing Loss: 1.865 | Acc: 52.000% (5200/10000)
+Saving..
+
+Epoch: 30
+learning rate is 0.1
+Training Loss: 1.280 | Acc: 63.358% (31679/50000)
+Testing Loss: 2.410 | Acc: 43.320% (4332/10000)
+Saving..
+
+Epoch: 31
+learning rate is 0.1
+Training Loss: 1.279 | Acc: 63.250% (31625/50000)
+Testing Loss: 1.952 | Acc: 50.280% (5028/10000)
+Saving..
+
+Epoch: 32
+learning rate is 0.1
+Training Loss: 1.259 | Acc: 63.852% (31926/50000)
+Testing Loss: 1.741 | Acc: 54.420% (5442/10000)
+Saving..
+
+Epoch: 33
+learning rate is 0.1
+Training Loss: 1.261 | Acc: 63.474% (31737/50000)
+Testing Loss: 2.100 | Acc: 47.660% (4766/10000)
+Saving..
+
+Epoch: 34
+learning rate is 0.1
+Training Loss: 1.258 | Acc: 63.740% (31870/50000)
+Testing Loss: 1.744 | Acc: 53.540% (5354/10000)
+Saving..
+
+Epoch: 35
+learning rate is 0.1
+Training Loss: 1.241 | Acc: 64.254% (32127/50000)
+Testing Loss: 2.022 | Acc: 49.710% (4971/10000)
+Saving..
+
+Epoch: 36
+learning rate is 0.1
+Training Loss: 1.236 | Acc: 64.526% (32263/50000)
+Testing Loss: 1.714 | Acc: 53.770% (5377/10000)
+Saving..
+
+Epoch: 37
+learning rate is 0.1
+Training Loss: 1.230 | Acc: 64.440% (32220/50000)
+Testing Loss: 1.947 | Acc: 49.960% (4996/10000)
+Saving..
+
+Epoch: 38
+learning rate is 0.1
+Training Loss: 1.228 | Acc: 64.488% (32244/50000)
+Testing Loss: 1.725 | Acc: 54.920% (5492/10000)
+Saving..
+
+Epoch: 39
+learning rate is 0.1
+Training Loss: 1.216 | Acc: 64.894% (32447/50000)
+Testing Loss: 1.790 | Acc: 54.080% (5408/10000)
+Saving..
+
+Epoch: 40
+learning rate is 0.1
+Training Loss: 1.219 | Acc: 64.792% (32396/50000)
+Testing Loss: 1.815 | Acc: 53.200% (5320/10000)
+Saving..
+
+Epoch: 41
+learning rate is 0.1
+Training Loss: 1.218 | Acc: 64.982% (32491/50000)
+Testing Loss: 1.698 | Acc: 54.810% (5481/10000)
+Saving..
+
+Epoch: 42
+learning rate is 0.1
+Training Loss: 1.202 | Acc: 65.340% (32670/50000)
+Testing Loss: 1.858 | Acc: 51.700% (5170/10000)
+Saving..
+
+Epoch: 43
+learning rate is 0.1
+Training Loss: 1.204 | Acc: 65.296% (32648/50000)
+Testing Loss: 1.803 | Acc: 53.110% (5311/10000)
+Saving..
+
+Epoch: 44
+learning rate is 0.1
+Training Loss: 1.198 | Acc: 65.518% (32759/50000)
+Testing Loss: 1.625 | Acc: 56.100% (5610/10000)
+Saving..
+
+Epoch: 45
+learning rate is 0.1
+Training Loss: 1.193 | Acc: 65.566% (32783/50000)
+Testing Loss: 1.769 | Acc: 53.380% (5338/10000)
+Saving..
+
+Epoch: 46
+learning rate is 0.1
+Training Loss: 1.191 | Acc: 65.534% (32767/50000)
+Testing Loss: 1.981 | Acc: 51.330% (5133/10000)
+Saving..
+
+Epoch: 47
+learning rate is 0.1
+Training Loss: 1.182 | Acc: 65.732% (32866/50000)
+Testing Loss: 1.672 | Acc: 55.150% (5515/10000)
+Saving..
+
+Epoch: 48
+learning rate is 0.1
+Training Loss: 1.179 | Acc: 66.066% (33033/50000)
+Testing Loss: 1.800 | Acc: 53.840% (5384/10000)
+Saving..
+
+Epoch: 49
+learning rate is 0.1
+Training Loss: 1.193 | Acc: 65.514% (32757/50000)
+Testing Loss: 1.687 | Acc: 55.020% (5502/10000)
+Saving..
+
+Epoch: 50
+learning rate is 0.010000000000000002
+Training Loss: 0.720 | Acc: 78.970% (39485/50000)
+Testing Loss: 0.928 | Acc: 73.170% (7317/10000)
+Saving..
+
+Epoch: 51
+learning rate is 0.010000000000000002
+Training Loss: 0.563 | Acc: 83.150% (41575/50000)
+Testing Loss: 0.913 | Acc: 73.920% (7392/10000)
+Saving..
+
+Epoch: 52
+learning rate is 0.010000000000000002
+Training Loss: 0.501 | Acc: 84.968% (42484/50000)
+Testing Loss: 0.898 | Acc: 74.420% (7442/10000)
+Saving..
+
+Epoch: 53
+learning rate is 0.010000000000000002
+Training Loss: 0.453 | Acc: 86.514% (43257/50000)
+Testing Loss: 0.904 | Acc: 74.410% (7441/10000)
+Saving..
+
+Epoch: 54
+learning rate is 0.010000000000000002
+Training Loss: 0.413 | Acc: 87.648% (43824/50000)
+Testing Loss: 0.899 | Acc: 74.600% (7460/10000)
+Saving..
+
+Epoch: 55
+learning rate is 0.010000000000000002
+Training Loss: 0.382 | Acc: 88.492% (44246/50000)
+Testing Loss: 0.903 | Acc: 74.540% (7454/10000)
+Saving..
+
+Epoch: 56
+learning rate is 0.010000000000000002
+Training Loss: 0.349 | Acc: 89.626% (44813/50000)
+Testing Loss: 0.921 | Acc: 74.550% (7455/10000)
+Saving..
+
+Epoch: 57
+learning rate is 0.010000000000000002
+Training Loss: 0.322 | Acc: 90.554% (45277/50000)
+Testing Loss: 0.931 | Acc: 74.450% (7445/10000)
+Saving..
+
+Epoch: 58
+learning rate is 0.010000000000000002
+Training Loss: 0.294 | Acc: 91.204% (45602/50000)
+Testing Loss: 0.926 | Acc: 74.600% (7460/10000)
+Saving..
+
+Epoch: 59
+learning rate is 0.010000000000000002
+Training Loss: 0.269 | Acc: 92.080% (46040/50000)
+Testing Loss: 0.938 | Acc: 74.510% (7451/10000)
+Saving..
+
+Epoch: 60
+learning rate is 0.010000000000000002
+Training Loss: 0.246 | Acc: 92.794% (46397/50000)
+Testing Loss: 0.953 | Acc: 74.480% (7448/10000)
+Saving..
+
+Epoch: 61
+learning rate is 0.010000000000000002
+Training Loss: 0.228 | Acc: 93.290% (46645/50000)
+Testing Loss: 0.967 | Acc: 74.630% (7463/10000)
+Saving..
+
+Epoch: 62
+learning rate is 0.010000000000000002
+Training Loss: 0.211 | Acc: 93.926% (46963/50000)
+Testing Loss: 0.977 | Acc: 74.530% (7453/10000)
+Saving..
+
+Epoch: 63
+learning rate is 0.010000000000000002
+Training Loss: 0.200 | Acc: 94.206% (47103/50000)
+Testing Loss: 1.035 | Acc: 73.400% (7340/10000)
+Saving..
+
+Epoch: 64
+learning rate is 0.010000000000000002
+Training Loss: 0.182 | Acc: 94.972% (47486/50000)
+Testing Loss: 0.992 | Acc: 74.400% (7440/10000)
+Saving..
+
+Epoch: 65
+learning rate is 0.010000000000000002
+Training Loss: 0.171 | Acc: 95.270% (47635/50000)
+Testing Loss: 1.025 | Acc: 74.250% (7425/10000)
+Saving..
+
+Epoch: 66
+learning rate is 0.010000000000000002
+Training Loss: 0.161 | Acc: 95.552% (47776/50000)
+Testing Loss: 1.037 | Acc: 73.740% (7374/10000)
+Saving..
+
+Epoch: 67
+learning rate is 0.010000000000000002
+Training Loss: 0.154 | Acc: 95.832% (47916/50000)
+Testing Loss: 1.036 | Acc: 73.710% (7371/10000)
+Saving..
+
+Epoch: 68
+learning rate is 0.010000000000000002
+Training Loss: 0.147 | Acc: 96.012% (48006/50000)
+Testing Loss: 1.066 | Acc: 73.530% (7353/10000)
+Saving..
+
+Epoch: 69
+learning rate is 0.010000000000000002
+Training Loss: 0.140 | Acc: 96.158% (48079/50000)
+Testing Loss: 1.089 | Acc: 73.100% (7310/10000)
+Saving..
+
+Epoch: 70
+learning rate is 0.010000000000000002
+Training Loss: 0.140 | Acc: 96.168% (48084/50000)
+Testing Loss: 1.081 | Acc: 73.440% (7344/10000)
+Saving..
+
+Epoch: 71
+learning rate is 0.010000000000000002
+Training Loss: 0.136 | Acc: 96.336% (48168/50000)
+Testing Loss: 1.042 | Acc: 74.080% (7408/10000)
+Saving..
+
+Epoch: 72
+learning rate is 0.010000000000000002
+Training Loss: 0.132 | Acc: 96.396% (48198/50000)
+Testing Loss: 1.113 | Acc: 72.930% (7293/10000)
+Saving..
+
+Epoch: 73
+learning rate is 0.010000000000000002
+Training Loss: 0.131 | Acc: 96.554% (48277/50000)
+Testing Loss: 1.086 | Acc: 73.710% (7371/10000)
+Saving..
+
+Epoch: 74
+learning rate is 0.010000000000000002
+Training Loss: 0.130 | Acc: 96.426% (48213/50000)
+Testing Loss: 1.110 | Acc: 73.150% (7315/10000)
+Saving..
+
+Epoch: 75
+learning rate is 0.010000000000000002
+Training Loss: 0.131 | Acc: 96.430% (48215/50000)
+Testing Loss: 1.111 | Acc: 72.920% (7292/10000)
+Saving..
+
+Epoch: 76
+learning rate is 0.010000000000000002
+Training Loss: 0.125 | Acc: 96.708% (48354/50000)
+Testing Loss: 1.119 | Acc: 73.460% (7346/10000)
+Saving..
+
+Epoch: 77
+learning rate is 0.010000000000000002
+Training Loss: 0.131 | Acc: 96.428% (48214/50000)
+Testing Loss: 1.111 | Acc: 73.430% (7343/10000)
+Saving..
+
+Epoch: 78
+learning rate is 0.010000000000000002
+Training Loss: 0.119 | Acc: 96.904% (48452/50000)
+Testing Loss: 1.098 | Acc: 73.440% (7344/10000)
+Saving..
+
+Epoch: 79
+learning rate is 0.010000000000000002
+Training Loss: 0.129 | Acc: 96.598% (48299/50000)
+Testing Loss: 1.167 | Acc: 72.620% (7262/10000)
+Saving..
+
+Epoch: 80
+learning rate is 0.010000000000000002
+Training Loss: 0.125 | Acc: 96.678% (48339/50000)
+Testing Loss: 1.093 | Acc: 73.320% (7332/10000)
+Saving..
+
+Epoch: 81
+learning rate is 0.010000000000000002
+Training Loss: 0.127 | Acc: 96.586% (48293/50000)
+Testing Loss: 1.127 | Acc: 73.180% (7318/10000)
+Saving..
+
+Epoch: 82
+learning rate is 0.010000000000000002
+Training Loss: 0.132 | Acc: 96.428% (48214/50000)
+Testing Loss: 1.171 | Acc: 71.830% (7183/10000)
+Saving..
+
+Epoch: 83
+learning rate is 0.010000000000000002
+Training Loss: 0.131 | Acc: 96.410% (48205/50000)
+Testing Loss: 1.154 | Acc: 72.480% (7248/10000)
+Saving..
+
+Epoch: 84
+learning rate is 0.010000000000000002
+Training Loss: 0.132 | Acc: 96.338% (48169/50000)
+Testing Loss: 1.236 | Acc: 70.470% (7047/10000)
+Saving..
+
+Epoch: 85
+learning rate is 0.010000000000000002
+Training Loss: 0.128 | Acc: 96.670% (48335/50000)
+Testing Loss: 1.169 | Acc: 71.840% (7184/10000)
+Saving..
+
+Epoch: 86
+learning rate is 0.010000000000000002
+Training Loss: 0.139 | Acc: 96.170% (48085/50000)
+Testing Loss: 1.191 | Acc: 71.580% (7158/10000)
+Saving..
+
+Epoch: 87
+learning rate is 0.010000000000000002
+Training Loss: 0.128 | Acc: 96.664% (48332/50000)
+Testing Loss: 1.211 | Acc: 71.500% (7150/10000)
+Saving..
+
+Epoch: 88
+learning rate is 0.010000000000000002
+Training Loss: 0.134 | Acc: 96.404% (48202/50000)
+Testing Loss: 1.203 | Acc: 71.460% (7146/10000)
+Saving..
+
+Epoch: 89
+learning rate is 0.010000000000000002
+Training Loss: 0.140 | Acc: 96.056% (48028/50000)
+Testing Loss: 1.235 | Acc: 71.150% (7115/10000)
+Saving..
+
+Epoch: 90
+learning rate is 0.010000000000000002
+Training Loss: 0.138 | Acc: 96.212% (48106/50000)
+Testing Loss: 1.277 | Acc: 70.600% (7060/10000)
+Saving..
+
+Epoch: 91
+learning rate is 0.010000000000000002
+Training Loss: 0.143 | Acc: 96.028% (48014/50000)
+Testing Loss: 1.234 | Acc: 70.630% (7063/10000)
+Saving..
+
+Epoch: 92
+learning rate is 0.010000000000000002
+Training Loss: 0.151 | Acc: 95.816% (47908/50000)
+Testing Loss: 1.181 | Acc: 71.080% (7108/10000)
+Saving..
+
+Epoch: 93
+learning rate is 0.010000000000000002
+Training Loss: 0.140 | Acc: 96.166% (48083/50000)
+Testing Loss: 1.161 | Acc: 72.280% (7228/10000)
+Saving..
+
+Epoch: 94
+learning rate is 0.010000000000000002
+Training Loss: 0.139 | Acc: 96.122% (48061/50000)
+Testing Loss: 1.244 | Acc: 71.330% (7133/10000)
+Saving..
+
+Epoch: 95
+learning rate is 0.010000000000000002
+Training Loss: 0.134 | Acc: 96.434% (48217/50000)
+Testing Loss: 1.204 | Acc: 71.550% (7155/10000)
+Saving..
+
+Epoch: 96
+learning rate is 0.010000000000000002
+Training Loss: 0.136 | Acc: 96.274% (48137/50000)
+Testing Loss: 1.233 | Acc: 70.770% (7077/10000)
+Saving..
+
+Epoch: 97
+learning rate is 0.010000000000000002
+Training Loss: 0.137 | Acc: 96.306% (48153/50000)
+Testing Loss: 1.169 | Acc: 71.980% (7198/10000)
+Saving..
+
+Epoch: 98
+learning rate is 0.010000000000000002
+Training Loss: 0.131 | Acc: 96.406% (48203/50000)
+Testing Loss: 1.237 | Acc: 71.190% (7119/10000)
+Saving..
+
+Epoch: 99
+learning rate is 0.010000000000000002
+Training Loss: 0.143 | Acc: 95.912% (47956/50000)
+Testing Loss: 1.179 | Acc: 71.680% (7168/10000)
+Saving..
+
+Epoch: 100
+learning rate is 0.0010000000000000002
+Training Loss: 0.066 | Acc: 98.604% (49302/50000)
+Testing Loss: 0.996 | Acc: 75.670% (7567/10000)
+Saving..
+
+Epoch: 101
+learning rate is 0.0010000000000000002
+Training Loss: 0.037 | Acc: 99.442% (49721/50000)
+Testing Loss: 0.987 | Acc: 75.990% (7599/10000)
+Saving..
+
+Epoch: 102
+learning rate is 0.0010000000000000002
+Training Loss: 0.029 | Acc: 99.640% (49820/50000)
+Testing Loss: 0.986 | Acc: 76.130% (7613/10000)
+Saving..
+
+Epoch: 103
+learning rate is 0.0010000000000000002
+Training Loss: 0.025 | Acc: 99.682% (49841/50000)
+Testing Loss: 0.985 | Acc: 76.120% (7612/10000)
+Saving..
+
+Epoch: 104
+learning rate is 0.0010000000000000002
+Training Loss: 0.023 | Acc: 99.752% (49876/50000)
+Testing Loss: 0.981 | Acc: 76.380% (7638/10000)
+Saving..
+
+Epoch: 105
+learning rate is 0.0010000000000000002
+Training Loss: 0.021 | Acc: 99.762% (49881/50000)
+Testing Loss: 0.981 | Acc: 76.370% (7637/10000)
+Saving..
+
+Epoch: 106
+learning rate is 0.0010000000000000002
+Training Loss: 0.019 | Acc: 99.814% (49907/50000)
+Testing Loss: 0.979 | Acc: 76.450% (7645/10000)
+Saving..
+
+Epoch: 107
+learning rate is 0.0010000000000000002
+Training Loss: 0.018 | Acc: 99.816% (49908/50000)
+Testing Loss: 0.975 | Acc: 76.840% (7684/10000)
+Saving..
+
+Epoch: 108
+learning rate is 0.0010000000000000002
+Training Loss: 0.017 | Acc: 99.842% (49921/50000)
+Testing Loss: 0.974 | Acc: 76.860% (7686/10000)
+Saving..
+
+Epoch: 109
+learning rate is 0.0010000000000000002
+Training Loss: 0.016 | Acc: 99.870% (49935/50000)
+Testing Loss: 0.971 | Acc: 76.840% (7684/10000)
+Saving..
+
+Epoch: 110
+learning rate is 0.0010000000000000002
+Training Loss: 0.016 | Acc: 99.864% (49932/50000)
+Testing Loss: 0.974 | Acc: 76.600% (7660/10000)
+Saving..
+
+Epoch: 111
+learning rate is 0.0010000000000000002
+Training Loss: 0.015 | Acc: 99.876% (49938/50000)
+Testing Loss: 0.973 | Acc: 76.620% (7662/10000)
+Saving..
+
+Epoch: 112
+learning rate is 0.0010000000000000002
+Training Loss: 0.015 | Acc: 99.862% (49931/50000)
+Testing Loss: 0.974 | Acc: 76.610% (7661/10000)
+Saving..
+
+Epoch: 113
+learning rate is 0.0010000000000000002
+Training Loss: 0.014 | Acc: 99.892% (49946/50000)
+Testing Loss: 0.974 | Acc: 76.710% (7671/10000)
+Saving..
+
+Epoch: 114
+learning rate is 0.0010000000000000002
+Training Loss: 0.014 | Acc: 99.876% (49938/50000)
+Testing Loss: 0.974 | Acc: 76.510% (7651/10000)
+Saving..
+
+Epoch: 115
+learning rate is 0.0010000000000000002
+Training Loss: 0.014 | Acc: 99.894% (49947/50000)
+Testing Loss: 0.973 | Acc: 76.630% (7663/10000)
+Saving..
+
+Epoch: 116
+learning rate is 0.0010000000000000002
+Training Loss: 0.013 | Acc: 99.912% (49956/50000)
+Testing Loss: 0.968 | Acc: 76.950% (7695/10000)
+Saving..
+
+Epoch: 117
+learning rate is 0.0010000000000000002
+Training Loss: 0.013 | Acc: 99.918% (49959/50000)
+Testing Loss: 0.975 | Acc: 76.730% (7673/10000)
+Saving..
+
+Epoch: 118
+learning rate is 0.0010000000000000002
+Training Loss: 0.012 | Acc: 99.920% (49960/50000)
+Testing Loss: 0.974 | Acc: 76.990% (7699/10000)
+Saving..
+
+Epoch: 119
+learning rate is 0.0010000000000000002
+Training Loss: 0.012 | Acc: 99.916% (49958/50000)
+Testing Loss: 0.973 | Acc: 76.770% (7677/10000)
+Saving..
+
+Epoch: 120
+learning rate is 0.0010000000000000002
+Training Loss: 0.012 | Acc: 99.910% (49955/50000)
+Testing Loss: 0.975 | Acc: 76.740% (7674/10000)
+Saving..
+
+Epoch: 121
+learning rate is 0.0010000000000000002
+Training Loss: 0.012 | Acc: 99.924% (49962/50000)
+Testing Loss: 0.970 | Acc: 76.730% (7673/10000)
+Saving..
+
+Epoch: 122
+learning rate is 0.0010000000000000002
+Training Loss: 0.011 | Acc: 99.926% (49963/50000)
+Testing Loss: 0.974 | Acc: 76.730% (7673/10000)
+Saving..
+
+Epoch: 123
+learning rate is 0.0010000000000000002
+Training Loss: 0.011 | Acc: 99.934% (49967/50000)
+Testing Loss: 0.971 | Acc: 76.930% (7693/10000)
+Saving..
+
+Epoch: 124
+learning rate is 0.0010000000000000002
+Training Loss: 0.012 | Acc: 99.898% (49949/50000)
+Testing Loss: 0.970 | Acc: 76.730% (7673/10000)
+Saving..
+
+Epoch: 125
+learning rate is 0.0010000000000000002
+Training Loss: 0.011 | Acc: 99.918% (49959/50000)
+Testing Loss: 0.971 | Acc: 76.860% (7686/10000)
+Saving..
+
+Epoch: 126
+learning rate is 0.0010000000000000002
+Training Loss: 0.011 | Acc: 99.928% (49964/50000)
+Testing Loss: 0.968 | Acc: 76.690% (7669/10000)
+Saving..
+
+Epoch: 127
+learning rate is 0.0010000000000000002
+Training Loss: 0.011 | Acc: 99.918% (49959/50000)
+Testing Loss: 0.969 | Acc: 76.840% (7684/10000)
+Saving..
+
+Epoch: 128
+learning rate is 0.0010000000000000002
+Training Loss: 0.011 | Acc: 99.938% (49969/50000)
+Testing Loss: 0.965 | Acc: 77.040% (7704/10000)
+Saving..
+
+Epoch: 129
+learning rate is 0.0010000000000000002
+Training Loss: 0.011 | Acc: 99.930% (49965/50000)
+Testing Loss: 0.964 | Acc: 76.870% (7687/10000)
+Saving..
+
+Epoch: 130
+learning rate is 0.0010000000000000002
+Training Loss: 0.011 | Acc: 99.922% (49961/50000)
+Testing Loss: 0.964 | Acc: 76.880% (7688/10000)
+Saving..
+
+Epoch: 131
+learning rate is 0.0010000000000000002
+Training Loss: 0.011 | Acc: 99.934% (49967/50000)
+Testing Loss: 0.968 | Acc: 76.740% (7674/10000)
+Saving..
+
+Epoch: 132
+learning rate is 0.0010000000000000002
+Training Loss: 0.010 | Acc: 99.936% (49968/50000)
+Testing Loss: 0.967 | Acc: 76.890% (7689/10000)
+Saving..
+
+Epoch: 133
+learning rate is 0.0010000000000000002
+Training Loss: 0.011 | Acc: 99.942% (49971/50000)
+Testing Loss: 0.962 | Acc: 76.690% (7669/10000)
+Saving..
+
+Epoch: 134
+learning rate is 0.0010000000000000002
+Training Loss: 0.010 | Acc: 99.922% (49961/50000)
+Testing Loss: 0.962 | Acc: 76.830% (7683/10000)
+Saving..
+
+Epoch: 135
+learning rate is 0.0010000000000000002
+Training Loss: 0.010 | Acc: 99.942% (49971/50000)
+Testing Loss: 0.971 | Acc: 76.820% (7682/10000)
+Saving..
+
+Epoch: 136
+learning rate is 0.0010000000000000002
+Training Loss: 0.010 | Acc: 99.940% (49970/50000)
+Testing Loss: 0.963 | Acc: 76.690% (7669/10000)
+Saving..
+
+Epoch: 137
+learning rate is 0.0010000000000000002
+Training Loss: 0.010 | Acc: 99.934% (49967/50000)
+Testing Loss: 0.961 | Acc: 76.720% (7672/10000)
+Saving..
+
+Epoch: 138
+learning rate is 0.0010000000000000002
+Training Loss: 0.010 | Acc: 99.938% (49969/50000)
+Testing Loss: 0.962 | Acc: 76.870% (7687/10000)
+Saving..
+
+Epoch: 139
+learning rate is 0.0010000000000000002
+Training Loss: 0.010 | Acc: 99.938% (49969/50000)
+Testing Loss: 0.970 | Acc: 76.720% (7672/10000)
+Saving..
+
+Epoch: 140
+learning rate is 0.0010000000000000002
+Training Loss: 0.010 | Acc: 99.940% (49970/50000)
+Testing Loss: 0.959 | Acc: 76.810% (7681/10000)
+Saving..
+
+Epoch: 141
+learning rate is 0.0010000000000000002
+Training Loss: 0.010 | Acc: 99.936% (49968/50000)
+Testing Loss: 0.961 | Acc: 76.650% (7665/10000)
+Saving..
+
+Epoch: 142
+learning rate is 0.0010000000000000002
+Training Loss: 0.010 | Acc: 99.954% (49977/50000)
+Testing Loss: 0.957 | Acc: 76.750% (7675/10000)
+Saving..
+
+Epoch: 143
+learning rate is 0.0010000000000000002
+Training Loss: 0.010 | Acc: 99.932% (49966/50000)
+Testing Loss: 0.958 | Acc: 76.760% (7676/10000)
+Saving..
+
+Epoch: 144
+learning rate is 0.0010000000000000002
+Training Loss: 0.010 | Acc: 99.934% (49967/50000)
+Testing Loss: 0.958 | Acc: 76.690% (7669/10000)
+Saving..
+
+Epoch: 145
+learning rate is 0.0010000000000000002
+Training Loss: 0.009 | Acc: 99.948% (49974/50000)
+Testing Loss: 0.961 | Acc: 76.800% (7680/10000)
+Saving..
+
+Epoch: 146
+learning rate is 0.0010000000000000002
+Training Loss: 0.010 | Acc: 99.936% (49968/50000)
+Testing Loss: 0.962 | Acc: 76.870% (7687/10000)
+Saving..
+
+Epoch: 147
+learning rate is 0.0010000000000000002
+Training Loss: 0.010 | Acc: 99.932% (49966/50000)
+Testing Loss: 0.954 | Acc: 76.910% (7691/10000)
+Saving..
+
+Epoch: 148
+learning rate is 0.0010000000000000002
+Training Loss: 0.010 | Acc: 99.946% (49973/50000)
+Testing Loss: 0.956 | Acc: 76.910% (7691/10000)
+Saving..
+
+Epoch: 149
+learning rate is 0.0010000000000000002
+Training Loss: 0.009 | Acc: 99.936% (49968/50000)
+Testing Loss: 0.956 | Acc: 76.900% (7690/10000)
+Saving..
+
+Epoch: 150
+learning rate is 0.00010000000000000003
+Training Loss: 0.009 | Acc: 99.940% (49970/50000)
+Testing Loss: 0.955 | Acc: 76.920% (7692/10000)
+Saving..
+
+Epoch: 151
+learning rate is 0.00010000000000000003
+Training Loss: 0.009 | Acc: 99.966% (49983/50000)
+Testing Loss: 0.955 | Acc: 76.970% (7697/10000)
+Saving..
+
+Epoch: 152
+learning rate is 0.00010000000000000003
+Training Loss: 0.009 | Acc: 99.952% (49976/50000)
+Testing Loss: 0.954 | Acc: 76.910% (7691/10000)
+Saving..
+
+Epoch: 153
+learning rate is 0.00010000000000000003
+Training Loss: 0.009 | Acc: 99.958% (49979/50000)
+Testing Loss: 0.952 | Acc: 77.000% (7700/10000)
+Saving..
+
+Epoch: 154
+learning rate is 0.00010000000000000003
+Training Loss: 0.009 | Acc: 99.946% (49973/50000)
+Testing Loss: 0.955 | Acc: 76.840% (7684/10000)
+Saving..
+
+Epoch: 155
+learning rate is 0.00010000000000000003
+Training Loss: 0.009 | Acc: 99.940% (49970/50000)
+Testing Loss: 0.954 | Acc: 76.790% (7679/10000)
+Saving..
+
+Epoch: 156
+learning rate is 0.00010000000000000003
+Training Loss: 0.009 | Acc: 99.946% (49973/50000)
+Testing Loss: 0.953 | Acc: 77.030% (7703/10000)
+Saving..
+
+Epoch: 157
+learning rate is 0.00010000000000000003
+Training Loss: 0.009 | Acc: 99.956% (49978/50000)
+Testing Loss: 0.956 | Acc: 76.970% (7697/10000)
+Saving..
+
+Epoch: 158
+learning rate is 0.00010000000000000003
+Training Loss: 0.009 | Acc: 99.950% (49975/50000)
+Testing Loss: 0.953 | Acc: 76.880% (7688/10000)
+Saving..
+
+Epoch: 159
+learning rate is 0.00010000000000000003
+Training Loss: 0.009 | Acc: 99.946% (49973/50000)
+Testing Loss: 0.953 | Acc: 76.840% (7684/10000)
+Saving..
+
+Epoch: 160
+learning rate is 0.00010000000000000003
+Training Loss: 0.009 | Acc: 99.962% (49981/50000)
+Testing Loss: 0.952 | Acc: 77.130% (7713/10000)
+Saving..
+
+Epoch: 161
+learning rate is 0.00010000000000000003
+Training Loss: 0.009 | Acc: 99.954% (49977/50000)
+Testing Loss: 0.950 | Acc: 77.010% (7701/10000)
+Saving..
+
+Epoch: 162
+learning rate is 0.00010000000000000003
+Training Loss: 0.009 | Acc: 99.962% (49981/50000)
+Testing Loss: 0.951 | Acc: 77.020% (7702/10000)
+Saving..
+
+Epoch: 163
+learning rate is 0.00010000000000000003
+Training Loss: 0.009 | Acc: 99.958% (49979/50000)
+Testing Loss: 0.953 | Acc: 76.970% (7697/10000)
+Saving..
+
+Epoch: 164
+learning rate is 0.00010000000000000003
+Training Loss: 0.009 | Acc: 99.950% (49975/50000)
+Testing Loss: 0.952 | Acc: 76.900% (7690/10000)
+Saving..
+
+Epoch: 165
+learning rate is 0.00010000000000000003
+Training Loss: 0.009 | Acc: 99.950% (49975/50000)
+Testing Loss: 0.950 | Acc: 76.960% (7696/10000)
+Saving..
+
+Epoch: 166
+learning rate is 0.00010000000000000003
+Training Loss: 0.009 | Acc: 99.948% (49974/50000)
+Testing Loss: 0.953 | Acc: 77.020% (7702/10000)
+Saving..
+
+Epoch: 167
+learning rate is 0.00010000000000000003
+Training Loss: 0.009 | Acc: 99.956% (49978/50000)
+Testing Loss: 0.951 | Acc: 76.910% (7691/10000)
+Saving..
+
+Epoch: 168
+learning rate is 0.00010000000000000003
+Training Loss: 0.009 | Acc: 99.956% (49978/50000)
+Testing Loss: 0.950 | Acc: 76.870% (7687/10000)
+Saving..
+
+Epoch: 169
+learning rate is 0.00010000000000000003
+Training Loss: 0.009 | Acc: 99.954% (49977/50000)
+Testing Loss: 0.954 | Acc: 77.000% (7700/10000)
+Saving..
+
+Epoch: 170
+learning rate is 0.00010000000000000003
+Training Loss: 0.009 | Acc: 99.952% (49976/50000)
+Testing Loss: 0.949 | Acc: 76.970% (7697/10000)
+Saving..
+
+Epoch: 171
+learning rate is 0.00010000000000000003
+Training Loss: 0.009 | Acc: 99.954% (49977/50000)
+Testing Loss: 0.954 | Acc: 76.950% (7695/10000)
+Saving..
+
+Epoch: 172
+learning rate is 0.00010000000000000003
+Training Loss: 0.009 | Acc: 99.964% (49982/50000)
+Testing Loss: 0.952 | Acc: 77.070% (7707/10000)
+Saving..
+
+Epoch: 173
+learning rate is 0.00010000000000000003
+Training Loss: 0.009 | Acc: 99.948% (49974/50000)
+Testing Loss: 0.952 | Acc: 76.910% (7691/10000)
+Saving..
+
+Epoch: 174
+learning rate is 0.00010000000000000003
+Training Loss: 0.009 | Acc: 99.952% (49976/50000)
+Testing Loss: 0.952 | Acc: 77.050% (7705/10000)
+Saving..
+
+Epoch: 175
+learning rate is 0.00010000000000000003
+Training Loss: 0.009 | Acc: 99.942% (49971/50000)
+Testing Loss: 0.951 | Acc: 76.920% (7692/10000)
+Saving..
+
+Epoch: 176
+learning rate is 0.00010000000000000003
+Training Loss: 0.009 | Acc: 99.962% (49981/50000)
+Testing Loss: 0.953 | Acc: 76.840% (7684/10000)
+Saving..
+
+Epoch: 177
+learning rate is 0.00010000000000000003
+Training Loss: 0.009 | Acc: 99.962% (49981/50000)
+Testing Loss: 0.947 | Acc: 76.990% (7699/10000)
+Saving..
+
+Epoch: 178
+learning rate is 0.00010000000000000003
+Training Loss: 0.009 | Acc: 99.954% (49977/50000)
+Testing Loss: 0.950 | Acc: 76.860% (7686/10000)
+Saving..
+
+Epoch: 179
+learning rate is 0.00010000000000000003
+Training Loss: 0.009 | Acc: 99.958% (49979/50000)
+Testing Loss: 0.952 | Acc: 76.750% (7675/10000)
+Saving..
+
+Epoch: 180
+learning rate is 0.00010000000000000003
+Training Loss: 0.009 | Acc: 99.956% (49978/50000)
+Testing Loss: 0.951 | Acc: 76.890% (7689/10000)
+Saving..
+
+Epoch: 181
+learning rate is 0.00010000000000000003
+Training Loss: 0.009 | Acc: 99.958% (49979/50000)
+Testing Loss: 0.950 | Acc: 76.960% (7696/10000)
+Saving..
+
+Epoch: 182
+learning rate is 0.00010000000000000003
+Training Loss: 0.009 | Acc: 99.970% (49985/50000)
+Testing Loss: 0.946 | Acc: 77.060% (7706/10000)
+Saving..
+
+Epoch: 183
+learning rate is 0.00010000000000000003
+Training Loss: 0.009 | Acc: 99.948% (49974/50000)
+Testing Loss: 0.952 | Acc: 76.960% (7696/10000)
+Saving..
+
+Epoch: 184
+learning rate is 0.00010000000000000003
+Training Loss: 0.009 | Acc: 99.962% (49981/50000)
+Testing Loss: 0.954 | Acc: 76.840% (7684/10000)
+Saving..
+
+Epoch: 185
+learning rate is 0.00010000000000000003
+Training Loss: 0.009 | Acc: 99.972% (49986/50000)
+Testing Loss: 0.956 | Acc: 76.990% (7699/10000)
+Saving..
+
+Epoch: 186
+learning rate is 0.00010000000000000003
+Training Loss: 0.009 | Acc: 99.952% (49976/50000)
+Testing Loss: 0.949 | Acc: 76.850% (7685/10000)
+Saving..
+
+Epoch: 187
+learning rate is 0.00010000000000000003
+Training Loss: 0.009 | Acc: 99.962% (49981/50000)
+Testing Loss: 0.950 | Acc: 77.010% (7701/10000)
+Saving..
+
+Epoch: 188
+learning rate is 0.00010000000000000003
+Training Loss: 0.009 | Acc: 99.950% (49975/50000)
+Testing Loss: 0.949 | Acc: 76.940% (7694/10000)
+Saving..
+
+Epoch: 189
+learning rate is 0.00010000000000000003
+Training Loss: 0.009 | Acc: 99.960% (49980/50000)
+Testing Loss: 0.949 | Acc: 77.020% (7702/10000)
+Saving..
+
+Epoch: 190
+learning rate is 0.00010000000000000003
+Training Loss: 0.009 | Acc: 99.968% (49984/50000)
+Testing Loss: 0.954 | Acc: 77.000% (7700/10000)
+Saving..
+
+Epoch: 191
+learning rate is 0.00010000000000000003
+Training Loss: 0.009 | Acc: 99.950% (49975/50000)
+Testing Loss: 0.949 | Acc: 76.920% (7692/10000)
+Saving..
+
+Epoch: 192
+learning rate is 0.00010000000000000003
+Training Loss: 0.009 | Acc: 99.964% (49982/50000)
+Testing Loss: 0.946 | Acc: 76.950% (7695/10000)
+Saving..
+
+Epoch: 193
+learning rate is 0.00010000000000000003
+Training Loss: 0.009 | Acc: 99.954% (49977/50000)
+Testing Loss: 0.951 | Acc: 76.940% (7694/10000)
+Saving..
+
+Epoch: 194
+learning rate is 0.00010000000000000003
+Training Loss: 0.009 | Acc: 99.954% (49977/50000)
+Testing Loss: 0.952 | Acc: 76.850% (7685/10000)
+Saving..
+
+Epoch: 195
+learning rate is 0.00010000000000000003
+Training Loss: 0.009 | Acc: 99.964% (49982/50000)
+Testing Loss: 0.952 | Acc: 76.900% (7690/10000)
+Saving..
+
+Epoch: 196
+learning rate is 0.00010000000000000003
+Training Loss: 0.009 | Acc: 99.960% (49980/50000)
+Testing Loss: 0.946 | Acc: 77.050% (7705/10000)
+Saving..
+
+Epoch: 197
+learning rate is 0.00010000000000000003
+Training Loss: 0.009 | Acc: 99.968% (49984/50000)
+Testing Loss: 0.951 | Acc: 76.930% (7693/10000)
+Saving..
+
+Epoch: 198
+learning rate is 0.00010000000000000003
+Training Loss: 0.009 | Acc: 99.962% (49981/50000)
+Testing Loss: 0.950 | Acc: 77.030% (7703/10000)
+Saving..
+
+Epoch: 199
+learning rate is 0.00010000000000000003
+Training Loss: 0.009 | Acc: 99.964% (49982/50000)
+Testing Loss: 0.949 | Acc: 77.040% (7704/10000)
+Saving..
+
+Epoch: 200
+learning rate is 1.0000000000000003e-05
+Training Loss: 0.009 | Acc: 99.960% (49980/50000)
+Testing Loss: 0.952 | Acc: 76.910% (7691/10000)
+Saving..
+
+Epoch: 201
+learning rate is 1.0000000000000003e-05
+Training Loss: 0.009 | Acc: 99.972% (49986/50000)
+Testing Loss: 0.950 | Acc: 76.900% (7690/10000)
+Saving..
+
+Epoch: 202
+learning rate is 1.0000000000000003e-05
+Training Loss: 0.009 | Acc: 99.960% (49980/50000)
+Testing Loss: 0.949 | Acc: 76.840% (7684/10000)
+Saving..
+
+Epoch: 203
+learning rate is 1.0000000000000003e-05
+Training Loss: 0.009 | Acc: 99.966% (49983/50000)
+Testing Loss: 0.950 | Acc: 76.960% (7696/10000)
+Saving..
+
+Epoch: 204
+learning rate is 1.0000000000000003e-05
+Training Loss: 0.008 | Acc: 99.958% (49979/50000)
+Testing Loss: 0.952 | Acc: 76.990% (7699/10000)
+Saving..
+
+Epoch: 205
+learning rate is 1.0000000000000003e-05
+Training Loss: 0.009 | Acc: 99.962% (49981/50000)
+Testing Loss: 0.946 | Acc: 76.910% (7691/10000)
+Saving..
+
+Epoch: 206
+learning rate is 1.0000000000000003e-05
+Training Loss: 0.009 | Acc: 99.952% (49976/50000)
+Testing Loss: 0.957 | Acc: 76.670% (7667/10000)
+Saving..
+
+Epoch: 207
+learning rate is 1.0000000000000003e-05
+Training Loss: 0.009 | Acc: 99.946% (49973/50000)
+Testing Loss: 0.951 | Acc: 76.950% (7695/10000)
+Saving..
+
+Epoch: 208
+learning rate is 1.0000000000000003e-05
