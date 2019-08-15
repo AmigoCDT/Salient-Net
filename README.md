@@ -1,3 +1,13 @@
+# Salient-Net, SENet 以及 ResNet 在 cifar10 和 cifar100 效果比较
+  在cifar-100和cifar-10上训练，batch_size均为100，学习率最开始为0.1，每过50个epoch学习率除以10。总共训练240个epoch。选取在测试集上的最大的ACC作为结果。
+
+|                      | ResNet50 | SeNet50 | SalientNet50 |
+| -------------------- | -------- | ------- | ------------ |
+| cifar-100(Top-1 ACC) | 77.260%  | 77.130% | 78.350%      |
+| cifar-10(Top-1 ACC)  | 94.380%  | 94.830% | 94.930%      |
+
+
+
 # Train CIFAR with PyTorch
 
 I'm playing with [PyTorch](http://pytorch.org/) on the cifar10 or cifar100 dataset.
