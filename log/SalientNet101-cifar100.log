@@ -1,0 +1,79 @@
+args are Namespace(backbone='salientnet', batch_size=50, ckpt_dir='./checkpoint/salientnet101-cifar100', dataset='cifar100', layers_num=101, lr=0.1, pretrain_model='', resume=False)
+==> Preparing data..
+preparing dataset: cifar100
+Files already downloaded and verified
+Files already downloaded and verified
+==> Building model..
+Net building finished
+
+Epoch: 0
+learning rate is 0.1
+Training Loss: 4.065 | Acc: 6.854% (3427/50000)
+Testing Loss: 3.649 | Acc: 13.680% (1368/10000)
+Saving..
+
+Epoch: 1
+learning rate is 0.1
+Training Loss: 3.467 | Acc: 16.034% (8017/50000)
+Testing Loss: 3.354 | Acc: 18.270% (1827/10000)
+Saving..
+
+Epoch: 2
+learning rate is 0.1
+Training Loss: 3.081 | Acc: 23.214% (11607/50000)
+Testing Loss: 3.112 | Acc: 23.600% (2360/10000)
+Saving..
+
+Epoch: 3
+learning rate is 0.1
+Training Loss: 2.784 | Acc: 28.656% (14328/50000)
+Testing Loss: 2.859 | Acc: 29.410% (2941/10000)
+Saving..
+
+Epoch: 4
+learning rate is 0.1
+Training Loss: 2.588 | Acc: 32.664% (16332/50000)
+Testing Loss: 2.692 | Acc: 32.370% (3237/10000)
+Saving..
+
+Epoch: 5
+learning rate is 0.1
+Training Loss: 2.440 | Acc: 35.730% (17865/50000)
+Testing Loss: 2.465 | Acc: 36.020% (3602/10000)
+Saving..
+
+Epoch: 6
+learning rate is 0.1
+Training Loss: 2.321 | Acc: 38.306% (19153/50000)
+Testing Loss: 2.494 | Acc: 35.180% (3518/10000)
+
+Epoch: 7
+learning rate is 0.1
+Training Loss: 2.222 | Acc: 40.406% (20203/50000)
+Testing Loss: 2.507 | Acc: 36.170% (3617/10000)
+Saving..
+
+Epoch: 8
+learning rate is 0.1
+Training Loss: 2.136 | Acc: 42.378% (21189/50000)
+Testing Loss: 2.673 | Acc: 35.160% (3516/10000)
+
+Epoch: 9
+learning rate is 0.1
+Training Loss: 2.077 | Acc: 44.158% (22079/50000)
+Testing Loss: 2.315 | Acc: 39.120% (3912/10000)
+Saving..
+
+Epoch: 10
+learning rate is 0.1
+Training Loss: 2.025 | Acc: 44.932% (22466/50000)
+Testing Loss: 2.619 | Acc: 36.030% (3603/10000)
+
+Epoch: 11
+learning rate is 0.1
+Training Loss: 1.997 | Acc: 45.704% (22852/50000)
+Testing Loss: 2.233 | Acc: 42.410% (4241/10000)
+Saving..
+
+Epoch: 12
+learning rate is 0.1
