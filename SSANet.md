@@ -12,7 +12,7 @@
 
 认为在每个卷积后的feature maps中，每个通道对于整个网络的重要性不同(可能是基于稀疏理论？)。
 
-![SEBlock](G:/useful/SalientNet-pics/SEBlock.jpg)
+![SEBlock](./SalientNet-pics/SEBlock.jpg)
 
 以上是SEBlock的结构，假设input的shape为(N, C, H, W)，其中N为batch_size， C为通道数，H和W分别为每个通道的图像的高和宽。通过Global_Pooling降维到(N, C, 1, 1)，再通过全连接层，学习到W=(N, C, 1, 1)，即为input的每个通道的权重，再将W数乘(broadcast_mult)到input中。
 
