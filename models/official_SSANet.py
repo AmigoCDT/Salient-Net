@@ -24,11 +24,20 @@ class SalientBlock(nn.Module):
     def __init__(self, in_planes):
         super(SalientBlock, self).__init__()
         self.conv = nn.Conv2d(in_planes, 1, kernel_size=1, stride=1, padding=0, bias=False)
+        self.globalAvgPool = nn.AdaptiveAvgPool2d(1)
         self.bn = nn.BatchNorm2d(1)
+        self.sigmoid = nn.Sigmoid()
     
     def forward(self, x):
-        w = torch.sigmoid(self.bn(self.conv(x)))
-        out = w * x # boradcasting mul
+        # w = torch.sigmoid(self.bn(self.conv(x)))
+        #out = (1+w) * x # boradcasting mul
+        #out = w * x
+        size_n, _, size_h, size_w = list(x.size())
+        w = self.globalAvgPool(x)
+        #w = w*x
+        w = torch.mean(w*x, 1).view((size_n, 1, size_h, size_w))
+        spatial_w = self.sigmoid(self.bn(w))
+        out = spatial_w * x
         return out
 
 def conv3x3(in_planes, out_planes, stride=1, groups=1, dilation=1):
