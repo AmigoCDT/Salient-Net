@@ -16,7 +16,7 @@
 
 以上是SEBlock的结构，假设input的shape为(N, C, H, W)，其中N为batch_size， C为通道数，H和W分别为每个通道的图像的高和宽。通过Global_Pooling降维到(N, C, 1, 1)，再通过全连接层，学习到W=(N, C, 1, 1)，即为input的每个通道的权重，再将W数乘(broadcast_mult)到input中。
 
-![SE_ResNet_Inception](G:/useful/SalientNet-pics/SE_ResNet_Inception.jpg)
+![SE_ResNet_Inception](./SalientNet-pics/SE_ResNet_Inception.jpg)
 
 
 
@@ -40,7 +40,7 @@
 
 ​		Itti于1998年提出基于显著性的视觉注意模型,并在2001年度Nature上对该模型理论作了进一步的完善。Itti的显著性模型最具代表性，该模型已经成为了自下而上视觉注意模型的标准。
 
-![salient_feature_merge](G:/useful/SalientNet-pics/salient_feature_merge.png)
+![salient_feature_merge](./SalientNet-pics/salient_feature_merge.png)
 
 对于一幅输入的图像，该模型提取初级视觉特征：颜色（RGBY）亮度和方位、在多种尺度下使用中央周边(Center-surround)操作产生体现显著性度量的特征图，将这些特征图合并得到最终的[显著图](https://baike.baidu.com/item/显著图/22742326)(Saliency map)后,利用生物学中赢者取全(Winner-take-all)的竞争机制得到图像中最显著的空间位置, 用来向导注意位置的选取，最后采用返回抑制 (Inhibition of return) 的方法来完成注意焦点的转移。
 
