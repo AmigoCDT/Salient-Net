@@ -114,4 +114,4 @@ $$
 
 The convolution operator, which enables networks to construct informative features by fusing both spatial and channel-wise information within local receptive fields at each layer.
 
-investigate 研究
+investigate
