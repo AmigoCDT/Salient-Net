@@ -6,9 +6,9 @@
 
 ## Abstract
 
-The CNN (convolutional neural networks) attract many attentation because of its great ability of feature self-extracting. CNN's central block, the convolutional operator can push networks to extract features which combine local spatial and channel-wise information. The main domain in CNN is how to help CNN learn better features. So research released VGG, Residual networks, DenseNet and so on for deeper features, and Squeeze-and-Excitation module (SE-module), Residual Attentation Networks to filtrate low-effect features and enhance high-effect features.
+~~The CNN (convolutional neural networks) attract many attentation because of its great ability of feature self-extracting. CNN's central block, the convolutional operator can push networks to extract features which combine local spatial and channel-wise information. The main domain in CNN is how to help CNN learn better features. So research released VGG, Residual networks, DenseNet and so on for deeper features, and Squeeze-and-Excitation module (SE-module), Residual Attentation Networks to filtrate low-effect features and enhance high-effect features.~~
 
-In this work, we propose "Squash and Spatial Attentation (SSA)" module, which combine the channel-wise information and spatial-wise information. We show that the SSA-module can be stacked in many CNN architectures forming SSANet. Extensive experments are conducted on CIFAR-10, CIFAR-100 and Imagenet datasets to verify the effectiveness of SSANet. Our SSA-module can improve convolutional neural networks performance with nearly no parameters and low computing cost, the SSA-ResNet50 could archieve 76.60% (Top-1 Acc) in Imagenet1K, and 78.35% on cifar-100.
+Aim to enhance representation ability of CNN with little parameter and computing cost, in this work we propose "Squash and Spatial Attentation (SSA)" module, which combine the channel-wise information and spatial information. The SSA-module is full-compatible with convolutional block, can be stacked in many CNN architectures forming like SSA-ResNet in Figure.4. Extensive experments are conducted on CIFAR-10, CIFAR-100 and Imagenet datasets to verify the effectiveness of SSANet. Our SSA-module can improve convolutional neural networks performance with nearly no parameters and low computing cost, the SSA-ResNet50 could archieve 76.60% (Top-1 Acc) in Imagenet1K, and 78.35% on cifar-100.
 
 ## 1. Introdction
 
@@ -22,7 +22,7 @@ Different from stacking more layers, recent investigations have shown that the r
 
 ![SE_ResNet_Inception](./pics/SE_ResNet_Inception.jpg)
 
-In this paper, we introduce a new attentation unit - Squash and Spatial Attentation (SSA) module, which can combine the channel-wise and spatial-wise information. The SSA-module is proposed with the target of extracting better representations by low cost (few parameters, low computing cost) and fullly-compatibility with CNN architectures.
+In this paper, we introduce a new attentation unit - Squash and Spatial Attentation (SSA) module, which can combine the channel-wise and spatial-wise information. The SSA-module is proposed with the target of extracting better representations by low cost (few parameters, low computing cost) and full-compatibility with CNN architectures.
 
 The SSA module is illustrated in Fig. 2, For the input X, we can obtain each feature map's globel information by Squash operation, e.g. global average pooling, which produces a channel descriptor by aggregating feature maps across their spatial dimensions (H × W) [4]. Then we regard the Squash operator's output as the weight or convlutional kernals of each channel in X, combining all channels together to get the saliency map. So the saliency map combine channel-wise and spatial-wise information, we resume the saliency map as the weight of all channel in X, recalibrate the input X by the saliency map.
 
@@ -31,8 +31,6 @@ The SSA-Module is designed to be compatible with other CNN architectures, so it 
 ~~In the ImageNet-1K dataset, the ResNet50 integrated SSA-module, ~~
 
 !["SSA结构示意图"](./pics/SSABlock_1.PNG "SSA结构示意图")
-
-
 
 ## 2. Related Works / Attentation Mechanisms
 
@@ -131,21 +129,31 @@ As for the computing cost, there are three main operators: squeeze operator, lin
 
 ## 5. Experments
 
-### Image Classification on cifar
+In this section, we perform several experments to evaluate effectiveness of SSA-Module in compurter vision tasks, and compatibility with CNN architectures.
 
-| Networks | cifar100 Top-1 Acc | cifar10 Top-1 Acc | Parameters (M) | FLOPs |
+### Image Classification on cifar-10/100
+
+| Networks | cifar100 Top-1 Acc | cifar10 Top-1 Acc | Parameters (M) | GFLOPs |
 |:-:|:-:|:-:|:-:|:-:|
 | ResNet50 | 77.26% | 94.38% | 25.6 | 3.86 |
 | SE-ResNet50(ratio=16) | 77.13% | 94.83% | 28.1 | 3.87 |
 | SSA-ResNet50 | 78.35% | 94.93% | 25.6 | 3.87 |
 
-### Image Classification on Imagenet1K
+### Image Classification on Imagenet-1K
 
-| Networks | Top-1 Acc | Top-5 Acc | Parameters (M) | FLOPs |
+| Networks | Top-1 Acc | Top-5 Acc | Parameters (M) | GFLOPs |
 |:-:|:-:|:-:|:-:|:-:|
 | ResNet50 | 75.24% | 92.36% | 25.6 | 3.86 |
 | SE-ResNet50(ratio=16) | 76.75% | 93.41% | 28.1 | 3.87 |
 | SSA-ResNet50 | 76.61% | 93.29% | 25.6 | 3.87 |
+
+### SSA-module in mobielnet-v2
+
+| Networks | Top-1 Acc | Top-5 Acc | Parameters (M) | GFLOPs |
+|:-:|:-:|:-:|:-:|:-:|
+| mobielnet-v2-1.0 | 72.10% | 90.48% | 3.4 | 0.3 |
+| SE-mobielnet-v2-1.0(ratio=16) | 00.00% | 00.00% | 3.7 | 0.304 |
+| SSA-mobielnet-v2-1.0 | 00.00% | 00.00% | 3.4 | 0.304 |
 
 ## Reference
 
