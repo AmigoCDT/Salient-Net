@@ -8,7 +8,7 @@
 
 ~~The CNN (convolutional neural networks) attract many attentation because of its great ability of feature self-extracting. CNN's central block, the convolutional operator can push networks to extract features which combine local spatial and channel-wise information. The main domain in CNN is how to help CNN learn better features. So research released VGG, Residual networks, DenseNet and so on for deeper features, and Squeeze-and-Excitation module (SE-module), Residual Attentation Networks to filtrate low-effect features and enhance high-effect features.~~
 
-Aim to enhance representation ability of CNN with little parameter and computing cost, in this work we propose "Squash and Spatial Attentation (SSA)" module, which combine the channel-wise information and spatial information. The SSA-module is full-compatible with convolutional block, can be stacked in many CNN architectures forming like SSA-ResNet in Figure.4. Extensive experments are conducted on CIFAR-10, CIFAR-100 and Imagenet datasets to verify the effectiveness of SSANet. Our SSA-module can improve convolutional neural networks performance with nearly no parameters and low computing cost, the SSA-ResNet50 could archieve 76.60% (Top-1 Acc) in Imagenet1K, and 78.35% on cifar-100.
+Aim to enhance CNN's representation ability with little parameter and computing cost, in this work we propose "Squash and Spatial Attentation (SSA)" module, which combine the channel-wise information and spatial information. The SSA-module is full-compatible with convolutional block, can be stacked in many CNN architectures forming like SSA-ResNet in Figure.4. Extensive experments are conducted on CIFAR-10, CIFAR-100 and Imagenet datasets to verify the effectiveness of SSANet. Our SSA-module can improve convolutional neural networks performance with nearly no parameters and low computing cost, the SSA-ResNet50 could archieve 76.60% (Top-1 Acc) in Imagenet1K, and 78.35% on cifar-100.
 
 ## 1. Introdction
 
@@ -149,11 +149,21 @@ In this section, we perform several experments to evaluate effectiveness of SSA-
 
 ### SSA-module in mobielnet-v2
 
+In table.1 and table.2, SSA-module has shown great power to enhance representation ability of Residual Networks. In this experment, we add SSA-module to lightweight networks to verify its compatibility. We add SSA-module to mobilenet-v2 with width multiplier set to 1.0. We train SSA-movilenetv2-1.0 using same optimizing method with mobilenet-v2: SGD optimizer with momentum of 0.9, initial learning rate of 0.045, learning rate decay of 0.98 per epoch.
+
 | Networks | Top-1 Acc | Top-5 Acc | Parameters (M) | GFLOPs |
 |:-:|:-:|:-:|:-:|:-:|
 | mobielnet-v2-1.0 | 72.10% | 90.48% | 3.4 | 0.3 |
 | SE-mobielnet-v2-1.0(ratio=16) | 00.00% | 00.00% | 3.7 | 0.304 |
 | SSA-mobielnet-v2-1.0 | 00.00% | 00.00% | 3.4 | 0.304 |
+
+This table show SSA-module can help mobilenet to improve performance and is also compatible with lightweight networks.
+
+## Conclusions and future work
+
+We introduce a new lightweight attentation module - SSA-module to enhance CNN's representation, this module allow us to improve performance of CNN with little parameter and computing cost, and it is compatible with most CNN architectures.
+
+But this module is also needed to re-train if we add it to CNN. In my sight, extra parameter of SSA-module is just in BatchNorm layers, we can easily set the two parameters: gamma and beta of BN layer to constant value. So, can we improve CNN's performance by adding SSA-module to CNN straightly, i.e. setting the extra parameters of BN layers to constant values, without re-training? If this is feasible, this module can be a better choice for engineers to improve CNN's performance.
 
 ## Reference
 
