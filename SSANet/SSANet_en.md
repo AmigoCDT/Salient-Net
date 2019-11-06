@@ -8,7 +8,7 @@
 
 ~~The CNN (convolutional neural networks) attract many attentation because of its great ability of feature self-extracting. CNN's central block, the convolutional operator can push networks to extract features which combine local spatial and channel-wise information. The main domain in CNN is how to help CNN learn better features. So research released VGG, Residual networks, DenseNet and so on for deeper features, and Squeeze-and-Excitation module (SE-module), Residual Attentation Networks to filtrate low-effect features and enhance high-effect features.~~
 
-Aim to enhance CNN's representation ability with little parameter and computing cost, in this work we propose "Squash and Spatial Attentation (SSA)" module, which combine the channel-wise information and spatial information. The SSA-module is full-compatible with convolutional block, can be stacked in many CNN architectures forming like SSA-ResNet in Figure.4. Extensive experments are conducted on CIFAR-10, CIFAR-100 and Imagenet datasets to verify the effectiveness of SSANet. Our SSA-module can improve convolutional neural networks performance with nearly no parameters and low computing cost, the SSA-ResNet50 could archieve 76.60% (Top-1 Acc) in Imagenet1K, and 78.35% on cifar-100.
+Aim to enhance CNN's representation ability with little parameter and computing cost, in this work we propose "Squash and Spatial Attentation (SSA)" module, which combine the channel-wise information and spatial information. The SSA-module is full-compatible with convolutional block, can be stacked in many CNN architectures forming like SSA-ResNet in Figure.4. Extensive experments are conducted on CIFAR-10, CIFAR-100 and Imagenet datasets to verify the effectiveness of SSANet. Our SSA-module can improve convolutional neural networks performance with nearly no parameters and low computing cost, the SSA-ResNet50 could archieve 76.60% (Top-1 Acc) in Imagenet1K, and 78.35% on CIFAR-100.
 
 ## 1. Introdction
 
@@ -50,7 +50,7 @@ $$
 caM = Squash(X), caM\in\mathbb{R}^{(C, 1, 1)}, X\in\mathbb{R}^{(C, H, W)}
 $$
 
-Where the X is the input feature map, caM is the channel-wise attentation map. In practical, "Squash" is global pooling operator.
+Where the X is the input feature map, caM is the channel-wise attentation map. In practice, "Squash" is global pooling operator.
 
 ### 2.3 Spatial Attentation / Salience map
 
@@ -117,29 +117,47 @@ $$
 Y_{i,h,w} =saM_{1,h,w} \times X_{i,h,w}
 $$
 
+### 3.2 How to use SSA-module
+
+The SSA-module is compatible with convolutional operation, it can be added after each convolutional layer in theory. But in practice, we only add it before the residual shortcut operator as illustrated in Figure.4.
+
 ![SSA_ResNet](./pics/SSA_ResNet.PNG)
 
 ## 4. Model and Computational Complexity
 
-We design the SSA-module to improve CNN's representation ability with low parameter and computing cost. 
+We design the SSA-module to improve CNN's representation ability with low parameter and computing cost. Different from Squeeze-and-Excitation module, we produce the channel-wise attentation map with out perceptrons or FC layers, we regard the vector squeezed by global pooling operator as channel-wise attentation map. So no extra parameter is needed in SSA-module.
 
-Different from Squeeze-and-Excitation module, we produce the channel-wise attentation map with out perceptrons or FC layers, we regard the vector squeezed by global pooling operator as channel-wise attentation map. So no extra parameter is needed in SSA-module.
-
-As for the computing cost, there are three main operators: squeeze operator, linear combination, and rescale. So its computational cost is inexpensive. We assume input image size is 224 x 224, and compare the forward computing cost ResNet-50 and SSA-ResNet-50, ResNet-50 requires about 3.86 GFLOPs, SSA-ResNet-50 requires about 3.87 GFLOPs, extra computational cost is lower than 0.3%
+As for computing cost of SSA-module, there are three main operators: squeeze operator, linear combination, and rescale. So its computational cost is inexpensive. We assume input image size is 224 x 224, and compare the forward computing cost ResNet-50 and SSA-ResNet-50, ResNet-50 requires about 3.86 GFLOPs, SSA-ResNet-50 requires about 3.87 GFLOPs, extra computational cost is lower than 0.3%
 
 ## 5. Experments
 
 In this section, we perform several experments to evaluate effectiveness of SSA-Module in compurter vision tasks, and compatibility with CNN architectures.
 
-### Image Classification on cifar-10/100
+### Image Classification on CIFAR-10/100
 
-| Networks | cifar100 Top-1 Acc | cifar10 Top-1 Acc | Parameters (M) | GFLOPs |
+We first conduct experments on small datasets: CIFAR-10 and CIFAR-100. CIFAR-10 has 10 different classes, 6000 images per class, total about 50000 images as training data, 10000 images used for testing. 100 classes in CIFAR-100 dataset, 500 training images and 100 testing images per class. We train ResNet-50, SE-ResNet-50 and SSA-ResNet-50 on CIFAR-10 and CIFAR-100, report the top-1 and top-5 accuracy on the testing set.
+
+Table.1 CIFAR-10
+
+| Networks | CIFAR10 Top-1 Acc | Parameters (M) | GFLOPs |
+|:-:|:-:|:-:|:-:|
+| ResNet50 | 94.38% | 25.6 | 3.86 |
+| SE-ResNet50(ratio=16) | 94.83% | 28.1 | 3.87 |
+| SSA-ResNet50 | 78.35% | 25.6 | 3.87 |
+
+Table.2 CIFAR-100
+
+| Networks | CIFAR100 Top-1 Acc | Parameters (M) | GFLOPs |
 |:-:|:-:|:-:|:-:|:-:|
-| ResNet50 | 77.26% | 94.38% | 25.6 | 3.86 |
-| SE-ResNet50(ratio=16) | 77.13% | 94.83% | 28.1 | 3.87 |
-| SSA-ResNet50 | 78.35% | 94.93% | 25.6 | 3.87 |
+| ResNet50 | 77.26% | 25.6 | 3.86 |
+| SE-ResNet50(ratio=16) | 77.13% | 28.1 | 3.87 |
+| SSA-ResNet50 | 78.35% | 25.6 | 3.87 |
 
 ### Image Classification on Imagenet-1K
+
+In this experment, we train networks on large dataset - ImageNet-2012-1K, this dataset comprise 1000 classes, 1300 images for training in each class, total 1.28 million training images and 50K images for validation. We report top-1 and top-5 accuracy on validation set.
+
+Table.3
 
 | Networks | Top-1 Acc | Top-5 Acc | Parameters (M) | GFLOPs |
 |:-:|:-:|:-:|:-:|:-:|
@@ -149,13 +167,17 @@ In this section, we perform several experments to evaluate effectiveness of SSA-
 
 ### SSA-module in mobielnet-v2
 
-In table.1 and table.2, SSA-module has shown great power to enhance representation ability of Residual Networks. In this experment, we add SSA-module to lightweight networks to verify its compatibility. We add SSA-module to mobilenet-v2 with width multiplier set to 1.0. We train SSA-movilenetv2-1.0 using same optimizing method with mobilenet-v2: SGD optimizer with momentum of 0.9, initial learning rate of 0.045, learning rate decay of 0.98 per epoch.
+In table.1 and table.2, SSA-module has shown great power to enhance representation ability of Residual Networks. In this experment, we verify its compatibility and enhancement.
+
+We add SSA-module to mobilenet-v2 with width multiplier set to 1.0. We train SSA-movilenetv2-1.0 using same optimizing method with mobilenet-v2 in its official implement: RMSPropOptimizer with both decay and momentum set to 0.9, initial learning rate of 0.045, learning rate decay of 0.98 per epoch, total 400 epoches.
+
+Table.4
 
 | Networks | Top-1 Acc | Top-5 Acc | Parameters (M) | GFLOPs |
 |:-:|:-:|:-:|:-:|:-:|
 | mobielnet-v2-1.0 | 72.10% | 90.48% | 3.4 | 0.3 |
 | SE-mobielnet-v2-1.0(ratio=16) | 00.00% | 00.00% | 3.7 | 0.304 |
-| SSA-mobielnet-v2-1.0 | 00.00% | 00.00% | 3.4 | 0.304 |
+| SSA-mobielnet-v2-1.0 | 74.8%(预计) | 00.00% | 3.4 | 0.304 |
 
 This table show SSA-module can help mobilenet to improve performance and is also compatible with lightweight networks.
 
@@ -163,7 +185,7 @@ This table show SSA-module can help mobilenet to improve performance and is also
 
 We introduce a new lightweight attentation module - SSA-module to enhance CNN's representation, this module allow us to improve performance of CNN with little parameter and computing cost, and it is compatible with most CNN architectures.
 
-But this module is also needed to re-train if we add it to CNN. In my sight, extra parameter of SSA-module is just in BatchNorm layers, we can easily set the two parameters: gamma and beta of BN layer to constant value. So, can we improve CNN's performance by adding SSA-module to CNN straightly, i.e. setting the extra parameters of BN layers to constant values, without re-training? If this is feasible, this module can be a better choice for engineers to improve CNN's performance.
+But this module is also needed to re-train if we add it to CNN. In my sight, extra parameter of SSA-module is just in batch normalization layers, we can easily set the two parameters: gamma and beta of BN layer to constant value in CAFFE. So, can we improve CNN's performance by adding SSA-module to CNN straightly, i.e. setting the extra parameters of BN layers to constant values, without re-training? If this is feasible, this module can be a better choice for engineers to improve CNN's performance.
 
 ## Reference
 
