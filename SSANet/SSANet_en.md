@@ -165,19 +165,19 @@ Table.3
 | SE-ResNet50(ratio=16) | 76.75% | 93.41% | 28.1 | 3.87 |
 | SSA-ResNet50 | 76.61% | 93.29% | 25.6 | 3.87 |
 
-### SSA-module in mobielnet-v2
+### SSA-module in mobielnet
 
 In table.1 and table.2, SSA-module has shown great power to enhance representation ability of Residual Networks. In this experment, we verify its compatibility and enhancement.
 
-We add SSA-module to mobilenet-v2 with width multiplier set to 1.0. We train SSA-movilenetv2-1.0 using same optimizing method with mobilenet-v2 in its official implement: RMSPropOptimizer with both decay and momentum set to 0.9, initial learning rate of 0.045, learning rate decay of 0.98 per epoch, total 400 epoches.
+We add SSA-module to mobilenet with width multiplier set to 1.0. We train SSA-movilenet-1.0 using same optimizing method with mobilenet in its official implement: RMSPropOptimizer with both decay and momentum set to 0.9, initial learning rate of 0.045, learning rate decay of 0.98 per epoch, total 400 epoches.
 
 Table.4
 
 | Networks | Top-1 Acc | Top-5 Acc | Parameters (M) | GFLOPs |
 |:-:|:-:|:-:|:-:|:-:|
-| mobielnet-v2-1.0 | 72.10% | 90.48% | 3.4 | 0.3 |
-| SE-mobielnet-v2-1.0(ratio=16) | 00.00% | 00.00% | 3.7 | 0.304 |
-| SSA-mobielnet-v2-1.0 | 74.8%(预计) | 00.00% | 3.4 | 0.304 |
+| mobielnet-1.0 | 70.6% | - | 3.4 | 0.569 |
+| SE-mobielnet-1.0(ratio=16) | 00.0% | 00.00% | 3.7 | 0.572 |
+| SSA-mobielnet-1.0 | 73.3%(预计) | 91.4% | 3.4 | 0.573 |
 
 This table show SSA-module can help mobilenet to improve performance and is also compatible with lightweight networks.
 
