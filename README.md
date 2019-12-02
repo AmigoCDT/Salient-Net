@@ -10,12 +10,12 @@ Table.1 CIFAR-10
 |:-:|:-:|:-:|:-:|
 | ResNet50 | 94.38% | 25.6 | 3.86 |
 | SE-ResNet50(ratio=16) | 94.83% | 28.1 | 3.87 |
-| SSA-ResNet50 | 78.35% | 25.6 | 3.87 |
+| SSA-ResNet50 | 94.91% | 25.6 | 3.87 |
 
 Table.2 CIFAR-100
 
 | Networks | CIFAR100 Top-1 Acc | Parameters (M) | GFLOPs |
-|:-:|:-:|:-:|:-:|:-:|
+|:-:|:-:|:-:|:-:|
 | ResNet50 | 77.26% | 25.6 | 3.86 |
 | SE-ResNet50(ratio=16) | 77.13% | 28.1 | 3.87 |
 | SSA-ResNet50 | 78.35% | 25.6 | 3.87 |
