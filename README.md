@@ -1,47 +1,43 @@
 # Salient-Net, SENet 以及 ResNet 在 cifar10 和 cifar100 效果比较
-  在cifar-100和cifar-10上训练，batch_size均为100，学习率最开始为0.1，每过50个epoch学习率除以10。总共训练240个epoch。选取在测试集上的最大的ACC作为结果。
 
-|                      | ResNet50 | SeNet50 | SalientNet50 |
-| -------------------- | -------- | ------- | ------------ |
-| cifar-100(Top-1 ACC) | 77.260%  | 77.130% | 78.350%      |
-| cifar-10(Top-1 ACC)  | 94.380%  | 94.830% | 94.930%      |
+ ## Image Classification on CIFAR-10/100
 
-# Usage
-train from scratch: `python main.py --lr 0.1 >./log/logfile.log`
+We first conduct experiments on small datasets: CIFAR-10 and CIFAR-100. CIFAR-10 has 10 different classes, 6000 images per class, total about 50000 images as training data, 10000 images used for testing. 100 classes in CIFAR-100 dataset, 500 training images and 100 testing images per class. We train ResNet-50, SE-ResNet-50 and SSA-ResNet-50 on CIFAR-10 and CIFAR-100, report the top-1 and top-5 accuracy on the testing set.
 
-train with pretrained-model: `python main.py --resume --lr=0.1 --ckpt-dir ./checkpoint --pretrain-model ./ckpt,133 >./log/resume_logfile.log`
+Table.1 CIFAR-10
 
+| Networks | CIFAR10 Top-1 Acc | Parameters (M) | GFLOPs |
+|:-:|:-:|:-:|:-:|
+| ResNet50 | 94.38% | 25.6 | 3.86 |
+| SE-ResNet50(ratio=16) | 94.83% | 28.1 | 3.87 |
+| SSA-ResNet50 | 78.35% | 25.6 | 3.87 |
 
-# Train CIFAR with PyTorch
+Table.2 CIFAR-100
 
-I'm playing with [PyTorch](http://pytorch.org/) on the cifar10 or cifar100 dataset.
+| Networks | CIFAR100 Top-1 Acc | Parameters (M) | GFLOPs |
+|:-:|:-:|:-:|:-:|:-:|
+| ResNet50 | 77.26% | 25.6 | 3.86 |
+| SE-ResNet50(ratio=16) | 77.13% | 28.1 | 3.87 |
+| SSA-ResNet50 | 78.35% | 25.6 | 3.87 |
 
-## Prerequisites
-- Python 3.6+
-- PyTorch 1.0+
+## Image Classification on Imagenet-1K
 
-## Accuracy
-This is not my result, this result is from [pytorch-cifar](https://github.com/kuangliu/pytorch-cifar)
+In this experiment, we train networks on large dataset - ImageNet-2012-1K, this dataset comprise 1000 classes, 1300 images for training in each class, total 1.28 million training images and 50K images for validation. We report top-1 and top-5 accuracy on validation set.
 
-| Model             | Acc.        |
-| ----------------- | ----------- |
-| [VGG16](https://arxiv.org/abs/1409.1556)              | 92.64%      |
-| [ResNet18](https://arxiv.org/abs/1512.03385)          | 93.02%      |
-| [ResNet50](https://arxiv.org/abs/1512.03385)          | 93.62%      |
-| [ResNet101](https://arxiv.org/abs/1512.03385)         | 93.75%      |
-| [MobileNetV2](https://arxiv.org/abs/1801.04381)       | 94.43%      |
-| [ResNeXt29(32x4d)](https://arxiv.org/abs/1611.05431)  | 94.73%      |
-| [ResNeXt29(2x64d)](https://arxiv.org/abs/1611.05431)  | 94.82%      |
-| [DenseNet121](https://arxiv.org/abs/1608.06993)       | 95.04%      |
-| [PreActResNet18](https://arxiv.org/abs/1603.05027)    | 95.11%      |
-| [DPN92](https://arxiv.org/abs/1707.01629)             | 95.16%      |
+Table.3
 
-## Learning rate adjustment
-I manually change the `lr` during training:
-- `0.1` for epoch `[0,50)`
-- `0.01` for epoch `[50,100)`
-- `0.001` for epoch `[100,150)`
-- `0.0001` for epoch `[150,200)`
-- `0.00001` for epoch `[200,250)`
+| Networks | Top-1 Acc | Top-5 Acc | Parameters (M) | GFLOPs |
+|:-:|:-:|:-:|:-:|:-:|
+| ResNet50 | 75.24% | 92.36% | 25.6 | 3.86 |
+| SE-ResNet50(ratio=16) | 76.75% | 93.41% | 28.1 | 3.87 |
+| SSA-ResNet50 | 76.61% | 93.29% | 25.6 | 3.87 |
+
+## SSA-module in mobilenet
+
+| Networks | Top-1 Acc | Top-5 Acc | Parameters (M) | GFLOPs |
+|:-:|:-:|:-:|:-:|:-:|
+| mobilenet-1.0 | 70.6% | - | 3.4 | 0.569 |
+| SE-mobilenet-1.0(ratio=16) | 73.6% | 00.00% | 3.7 | 0.572 |
+| SSA-mobilenet-1.0 | 73.3% | 91.4% | 3.4 | 0.573 |
 
 
