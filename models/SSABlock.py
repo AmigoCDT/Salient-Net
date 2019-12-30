@@ -18,6 +18,8 @@ class SalientBlock(nn.Module):
         return out
 
 
+# get 1 attention map by every k feature maps. 
+# If in_planes=256, channels_per_maps=16, we could get 256/16=16 attention maps.
 class GroupSalientBlock(nn.Module):
     def __init__(self, in_planes, channels_per_map):
         super(GroupSalientBlock, self).__init__()
