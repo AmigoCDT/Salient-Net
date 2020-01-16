@@ -1,6 +1,16 @@
 # Salient-Net, SENet 以及 ResNet 在 cifar10 和 cifar100 效果比较
 
-## Implement(Pytorch)：
+## Salient-Block结构示意图及实现
+
+示意图：
+
+!["SSA结构示意图"](./SSANet/pics/SSABlock_1.PNG "SSA结构示意图")
+
+### 将SSA结构应用于ResNet中：
+
+![SSA_ResNet](./SSANet/pics/SSA_ResNet.PNG)
+
+### Implement(Pytorch)：
 
 ```python
 class SailentBlock(nn.Module):
