@@ -4,30 +4,34 @@
 
 示意图：
 
-!["SSA结构示意图"](./SSANet/pics/SSABlock_1.PNG "SSA结构示意图")
+!["Salient-Block结构示意图"](./SSANet/pics/SSABlock_1.PNG "Salient-Block结构示意图")
 
-### 将SSA结构应用于ResNet中：
+### 将Salient结构应用于ResNet中：
 
-![SSA_ResNet](./SSANet/pics/SSA_ResNet.PNG)
+![Salient_ResNet](./SSANet/pics/SSA_ResNet.PNG)
 
 ### Implement(Pytorch)：
 
 ```python
-class SailentBlock(nn.Module):
+class SalientBlock(nn.Module):
     def __init__(self, in_planes):
-        super(SailentBlock, self).__init__()
-        self.conv = nn.Conv2d(in_planes, 1, kernel_size=1, stride=1, padding=0, bias=False)
+        super(SalientBlock, self).__init__()
+        self.globalAvgPool = nn.AdaptiveAvgPool2d(1)
         self.bn = nn.BatchNorm2d(1)
+        self.sigmoid = nn.Sigmoid()
     
     def forward(self, x):
-        w = F.sigmoid(self.bn(self.conv(x)))
-        out = w * x # boradcasting multime
+        size_n, _, size_h, size_w = list(x.size())
+        w = self.globalAvgPool(x)
+        w = torch.mean(w*x, 1).view((size_n, 1, size_h, size_w))
+        spatial_w = self.sigmoid(self.bn(w))
+        out = spatial_w * x
         return out
 ```
 
  ## Image Classification on CIFAR-10/100
 
-We first conduct experiments on small datasets: CIFAR-10 and CIFAR-100. CIFAR-10 has 10 different classes, 6000 images per class, total about 50000 images as training data, 10000 images used for testing. 100 classes in CIFAR-100 dataset, 500 training images and 100 testing images per class. We train ResNet-50, SE-ResNet-50 and SSA-ResNet-50 on CIFAR-10 and CIFAR-100, report the top-1 and top-5 accuracy on the testing set.
+We first conduct experiments on small datasets: CIFAR-10 and CIFAR-100. CIFAR-10 has 10 different classes, 6000 images per class, total about 50000 images as training data, 10000 images used for testing. 100 classes in CIFAR-100 dataset, 500 training images and 100 testing images per class. We train ResNet-50, SE-ResNet-50 and Salient-ResNet-50 on CIFAR-10 and CIFAR-100, report the top-1 and top-5 accuracy on the testing set.
 
 Table.1 CIFAR-10
 
@@ -35,7 +39,7 @@ Table.1 CIFAR-10
 |:-:|:-:|:-:|:-:|
 | ResNet50 | 94.38% | 25.6 | 3.86 |
 | SE-ResNet50(ratio=16) | 94.83% | 28.1 | 3.87 |
-| SSA-ResNet50 | 94.91% | 25.6 | 3.87 |
+| Salient-ResNet50 | 94.91% | 25.6 | 3.87 |
 
 Table.2 CIFAR-100
 
@@ -43,7 +47,7 @@ Table.2 CIFAR-100
 |:-:|:-:|:-:|:-:|
 | ResNet50 | 77.26% | 25.6 | 3.86 |
 | SE-ResNet50(ratio=16) | 77.13% | 28.1 | 3.87 |
-| SSA-ResNet50 | 78.35% | 25.6 | 3.87 |
+| Salient-ResNet50 | 78.35% | 25.6 | 3.87 |
 
 ## Image Classification on Imagenet-1K
 
@@ -55,14 +59,14 @@ Table.3
 |:-:|:-:|:-:|:-:|:-:|
 | ResNet50 | 75.24% | 92.36% | 25.6 | 3.86 |
 | SE-ResNet50(ratio=16) | 76.75% | 93.41% | 28.1 | 3.87 |
-| SSA-ResNet50 | 76.61% | 93.29% | 25.6 | 3.87 |
+| Salient-ResNet50 | 76.61% | 93.29% | 25.6 | 3.87 |
 
-## SSA-module in mobilenet
+## Salient-module in mobilenet
 
 | Networks | Top-1 Acc | Top-5 Acc | Parameters (M) | GFLOPs |
 |:-:|:-:|:-:|:-:|:-:|
 | mobilenet-1.0 | 70.6% | - | 3.4 | 0.569 |
 | SE-mobilenet-1.0(ratio=16) | 73.6% | 00.00% | 3.7 | 0.572 |
-| SSA-mobilenet-1.0 | 73.3% | 91.4% | 3.4 | 0.573 |
+| Salient-mobilenet-1.0 | 73.3% | 91.4% | 3.4 | 0.573 |
 
 
