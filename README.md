@@ -1,5 +1,20 @@
 # Salient-Net, SENet 以及 ResNet 在 cifar10 和 cifar100 效果比较
 
+## Implement(Pytorch)：
+
+```python
+class SailentBlock(nn.Module):
+    def __init__(self, in_planes):
+        super(SailentBlock, self).__init__()
+        self.conv = nn.Conv2d(in_planes, 1, kernel_size=1, stride=1, padding=0, bias=False)
+        self.bn = nn.BatchNorm2d(1)
+    
+    def forward(self, x):
+        w = F.sigmoid(self.bn(self.conv(x)))
+        out = w * x # boradcasting multime
+        return out
+```
+
  ## Image Classification on CIFAR-10/100
 
 We first conduct experiments on small datasets: CIFAR-10 and CIFAR-100. CIFAR-10 has 10 different classes, 6000 images per class, total about 50000 images as training data, 10000 images used for testing. 100 classes in CIFAR-100 dataset, 500 training images and 100 testing images per class. We train ResNet-50, SE-ResNet-50 and SSA-ResNet-50 on CIFAR-10 and CIFAR-100, report the top-1 and top-5 accuracy on the testing set.
