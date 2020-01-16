@@ -66,7 +66,7 @@ Table.3
 | Networks | Top-1 Acc | Top-5 Acc | Parameters (M) | GFLOPs |
 |:-:|:-:|:-:|:-:|:-:|
 | mobilenet-1.0 | 70.6% | - | 3.4 | 0.569 |
-| SE-mobilenet-1.0(ratio=16) | 73.6% | 00.00% | 3.7 | 0.572 |
+| SE-mobilenet-1.0(ratio=16) | 73.6% | 91.6% | 3.7 | 0.572 |
 | Salient-mobilenet-1.0 | 73.3% | 91.4% | 3.4 | 0.573 |
 
 
